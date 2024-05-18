@@ -1,0 +1,58 @@
+//Ejercicio1 IF - IF ELSE
+function verificarEdad() {
+  let edad = prompt("Por favor, ingrese su edad:");
+  edad = Number(edad);
+  if (isNaN(edad) || edad < 0) {
+    alert("Por favor, ingrese una edad válida.");
+  } else {
+    if (edad >= 18) {
+      alert("Eres mayor de edad.");
+    } else {
+      alert("No eres mayor de edad.");
+    }
+  }
+}
+
+verificarEdad();
+
+//Ejercicio2
+function determinarMayor() {
+  let numero1 = prompt("Por favor, ingrese el primer número:");
+  let numero2 = prompt("Por favor, ingrese el segundo número:");
+  
+  numero1 = Number(numero1);
+  numero2 = Number(numero2);
+  
+  if (isNaN(numero1) || isNaN(numero2)) {
+    alert("Por favor, ingrese números válidos.");
+  } else {
+    if (numero1 > numero2) {
+      alert("El primer número (" + numero1 + ") es mayor que el segundo número (" + numero2 + ").");
+    } else if (numero2 > numero1) {
+      alert("El segundo número (" + numero2 + ") es mayor que el primer número (" + numero1 + ").");
+    } else {
+      alert("Ambos números son iguales.");
+    }
+  }
+}
+
+determinarMayor();
+
+//Ejercicio3
+function determinarParidad() {
+  let numero = prompt("Por favor, ingrese un número entero:");
+  
+  numero = Number(numero);
+  
+  if (isNaN(numero) || !Number.isInteger(numero)) {
+    alert("Por favor, ingrese un número entero válido.");
+  } else {
+    if (numero % 2 === 0) {
+      alert("El número " + numero + " es par.");
+    } else {
+      alert("El número " + numero + " es impar.");
+    }
+  }
+}
+
+determinarParidad();
